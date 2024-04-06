@@ -14,25 +14,26 @@
 
 <body>
   <!-- Main Container -->
-  <main id="main" class="flex justify-center items-center min-h-screen bg-white">
+  <main id="main" class="flex min-h-screen justify-center items-center  bg-white">
     <!-- Card Container -->
-    <div class="flex flex-col max-w-sm mx-auto rounded-3xl md:flex-row md:max-w-5xl md:shadow-2xl">
+    <div class="flex flex-col  rounded-3xl md:flex-row p-0 m-0 md:shadow-paleBlue  md:shadow-2xl md:mx-auto">
       <!-- Results Container -->
       <section id="results"
-        class="flex flex-col rounded-3xl bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue z-3  md:p-8">
-        <div class="results-content-container p-8 items-center justify-center mx-auto rounded-3xl  md:space-y-6">
-          <p class="text-lightLavender font-semibold mt-4 mb-6 text-xl md:text-3xl text-center">Your Result</p>
+        class="flex flex-col rounded-3xl bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue z-3 p-7">
+        <div
+          class="results-content-container items-center justify-center mx-auto rounded-3xl space-y-6 md:mx-5 md:mb-5">
+          <p class="text-lightLavender font-semibold  text-lg md:text-xl text-center">Your Result</p>
           <div
-            class="circle rounded-full mx-auto m-6  relative items-center w-36 h-36 justify-center bg-gradient-to-b from-violetBlue relative to-persianBlue md:h-56 md:w-56">
-            <p class="absolute text-paleBlue text-4xl top-8 left-9  font-extrabold md:text-8xl md:top-12 md:left-16">
+            class="circle rounded-full mx-auto relative items-center w-36 h-36 justify-center bg-gradient-to-b from-violetBlue relative to-persianBlue md:size-48">
+            <p class="absolute text-paleBlue text-[4rem] top-4 left-9  font-extrabold md:text-7xl md:top-12 md:left-14">
               76
             </p>
-            <p class="absolute text-lightLavender bottom-6 left-12 font-bold md:bottom-10 md:left-20 md:text-2xl">
+            <p class="absolute text-lightLavender bottom-6 left-12 font-bold md:bottom-12 md:left-[72px] md:text-sm">
               of
               100</p>
           </div>
-          <h3 class="text-3xl font-bold text-paleBlue text-center md:text-4xl">Great</h3>
-          <p class="text-lightLavender text-center max-w-72 mt-2  md:text-2xl md:max-w-[22rem]">You scored higher than
+          <h3 class="text-3xl font-bold text-paleBlue text-center md:text-3xl">Great</h3>
+          <p class="text-lightLavender text-center max-w-72 md:text-lg md:max-w-64">You scored higher than
             65% of
             the people
             who have
@@ -42,60 +43,59 @@
         </div>
       </section>
       <!-- Summary Container -->
-      <section id="summary" class="bg-white flex flex-col rounded-3xl z-1 md:p-8">
-        <div class="summary-content-container p-6 space-y-10 items-start rounded-3xl">
-          <p class="text-darkGrayBlue text-lg font-semibold md:text-3xl md:mt-4">Summary</p>
+      <section id="summary" class="bg-white flex flex-col rounded-3xl">
+        <div class="summary-content-container space-y-4 items-start rounded-3xl p-7">
+          <p class="text-darkGrayBlue text-lg font-semibold md:text-xl">Summary</p>
           <!-- Summary Content Container -->
-          <div class="space-y-6">
-            <div class="flex bg-lightRed/5 justify-center items-between rounded-xl space-x-24 md:px-4">
-              <div class="flex items-center justify-center space-x-2 pl-4">
-                <img src="./images/icon-reaction.svg" alt="" class="w-8">
-                <p class="text-lightRed text-lg font-semibold md:text-xl">Reaction</p>
+          <div class="space-y-4">
+            <div class="flex bg-lightRed/5 justify-between rounded-xl">
+              <div class="flex items-center  space-x-2">
+                <img src="./images/icon-reaction.svg" alt="" class="w-5">
+                <p class="text-lightRed text-base font-semibold">Reaction</p>
               </div>
-              <div class="flex items-center">
-                <p class="text-lg text-lightLavender font-bold p-4 md:text-xl"><span
-                    class="text-darkGrayBlue pr-1">80</span> / 100
-                </p>
-              </div>
-            </div>
-            <div class="flex bg-orangeyYellow/5 justify-center items-between rounded-xl space-x-24 md:px-4">
-              <div class="flex items-center justify-center pl-4">
-                <img src="./images/icon-memory.svg" alt="" class="w-12 pr-4">
-                <p class="text-orangeyYellow text-lg font-semibold md:text-xl md:text-xl">Memory</p>
-              </div>
-              <div class="flex items-center">
-                <p class="text-lg text-lightLavender font-bold p-4 md:text-xl"><span
-                    class="text-darkGrayBlue pr-1">92</span> /
+              <div class="flex">
+                <p class="text-base text-lightLavender font-bold p-4"><span class="text-darkGrayBlue pr-1">80</span> /
                   100
                 </p>
               </div>
             </div>
-            <div class="flex bg-greenTeal/5 justify-center items-between rounded-xl space-x-24 md:px-4">
-              <div class="flex items-center justify-center pl-4">
-                <img src="./images/icon-verbal.svg" alt="" class="w-12 pr-4">
-                <p class="text-greenTeal text-lg font-semibold md:text-xl">Verbal</p>
+            <div class="flex bg-orangeyYellow/5  justify-between rounded-xl">
+              <div class="flex items-center justify-center space-x-2">
+                <img src="./images/icon-memory.svg" alt="" class="w-5">
+                <p class="text-orangeyYellow text-base font-semibold">Memory</p>
               </div>
-              <div class="flex items-center">
-                <p class="text-lg text-lightLavender font-bold p-4 md:text-xl"><span
-                    class="text-darkGrayBlue pr-1">61</span> / 100
+              <div class="flex">
+                <p class="text-base text-lightLavender font-bold p-4"><span class="text-darkGrayBlue pr-1">92</span> /
+                  100
                 </p>
               </div>
             </div>
-            <div class="flex bg-cobaltBlue/5 justify-center items-between rounded-xl space-x-24 md:px-4">
-              <div class="flex items-center justify-center pl-4">
-                <img src="./images/icon-visual.svg" alt="" class="w-12 pr-4">
-                <p class="text-cobaltBlue text-lg font-semibold md:text-xl">Visual</p>
+            <div class="flex bg-greenTeal/5 justify-between rounded-xl">
+              <div class="flex items-center  space-x-2">
+                <img src="./images/icon-verbal.svg" alt="" class="w-5">
+                <p class="text-greenTeal text-base font-semibold">Verbal</p>
               </div>
-              <div class="flex items-center">
-                <p class="text-lg text-lightLavender font-bold p-4 md:text-xl"><span
-                    class="text-darkGrayBlue pr-1">80</span> / 100
+              <div class="flex">
+                <p class="text-base text-lightLavender font-bold p-4"><span class="text-darkGrayBlue pr-1">92</span> /
+                  100
+                </p>
+              </div>
+            </div>
+            <div class="flex bg-cobaltBlue/5 justify-between rounded-xl">
+              <div class="flex items-center space-x-2 ">
+                <img src="./images/icon-visual.svg" alt="" class="w-5">
+                <p class="text-cobaltBlue text-base font-semibold">Visual</p>
+              </div>
+              <div class="flex">
+                <p class="text-base text-lightLavender font-bold p-4"><span class="text-darkGrayBlue pr-1">92</span> /
+                  100
                 </p>
               </div>
             </div>
 
           </div>
           <button
-            class="bg-darkGrayBlue py-4 px-8 w-full text-white text-xl font-semibold rounded-3xl bg-gradient-to-b hover:from-lightSlateBlue hover:to-lightRoyalBlue ">Continue</button>
+            class="bg-darkGrayBlue py-4 px-6 w-72 text-white text-base font-semibold rounded-3xl bg-gradient-to-b hover:from-lightSlateBlue hover:to-lightRoyalBlue">Continue</button>
         </div>
     </div>
     </section>
